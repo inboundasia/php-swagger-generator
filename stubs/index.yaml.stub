@@ -1,0 +1,39 @@
+get:
+  tags:
+    - {{ PluralizeModelNameU }}
+  summary: List of {{ PluralizeModelName }}
+  operationId: {{ PluralizeModelName }}.index
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              meta:
+                type: object
+              data:
+                type: array
+                items:
+                  $ref: '#/components/schemas/{{ ClassifyModelName }}'
+  security:
+    - ApiKey: []
+
+post:
+  tags:
+    - {{ PluralizeModelNameU }}
+  summary: Create {{ CamelizeModelName }}
+  description: ''
+  operationId: {{ PluralizeModelName }}.store
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '#/components/schemas/{{ ClassifyModelName }}'
+  responses:
+    '422':
+      description: Invalid input
+  security:
+    - ApiKey: []

@@ -1,0 +1,16 @@
+{
+    "name": "inboundasia/php-swagger-generator",
+    "description": "",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roli",
+            "email": "kuroridoplayer@gmail.com"
+        }
+    ],
+    "require": {
+        "splitbrain/php-cli": "^1.1",
+        "doctrine/inflector": "^1.3"
+    }
+}
