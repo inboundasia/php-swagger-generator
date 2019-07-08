@@ -4,7 +4,7 @@ Example:
 
 `php command.php --model=Product --path=/swagger/project/paths`
 
-under path `/swagger/project/paths`
+now structure under `/swagger/project/paths` will become
 
 ```
 .
