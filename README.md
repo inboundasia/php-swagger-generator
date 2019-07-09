@@ -1,5 +1,9 @@
 Generate CRUD path for Swagger UI
 
+Setup:
+
+`composer install`
+
 Example:
 
 `php command.php --model=Product --path=/swagger/project/paths`
